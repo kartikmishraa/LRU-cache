@@ -16,7 +16,7 @@ This project requires Python 3.7 or later.
 
 ## Usage
 
-To use the LRU Cache, import the LRUCache class from the lru cache module:
+To use the LRU Cache, import the **'LRU'** class from the **'cache'** module:
 
 ```python
 from cache import LRU
