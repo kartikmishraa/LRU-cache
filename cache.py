@@ -5,7 +5,7 @@ class Pair:
 
 class Node:
     def __init__(self, data):
-        self.data = data    # data here is a Pair instance
+        self.data = data    # data: Pair instance
         self.next = None
         self.prev = None
     
