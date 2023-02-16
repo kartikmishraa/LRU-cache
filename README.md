@@ -1,6 +1,6 @@
-# Introduction
+# LRU Cache
 
-LRU cache is a data structure that is used to store a limited number of items with the goal of improving performance by reducing the number of expensive operations needed to retrieve data. It works on the principle that the items that have been used recently are more likely to be used again, while the items that have not been used recently are less likely to be used again. LRU cache is commonly used in applications where there is a high frequency of reads and a low frequency of writes.
+This is a Python-based implementation of LRU Cache, a data structure used to store a limited number of items and improve performance by reducing the number of costly operations needed to retrieve data. It works on the principle that the items that have been used recently are more likely to be used again, while the items that have not been used recently are less likely to be used again. LRU cache is commonly used in applications where there is a high frequency of reads and a low frequency of writes.
 
 # How LRU Cache works
 
@@ -19,26 +19,28 @@ The LRU cache is implemented using a combination of hash tables and doubly linke
 - Limited by the size of the cache, which can result in the eviction of important items.
 - Implementation can be complex, especially for more complex algorithms like "frequency-based" or "hybrid" algorithms.
 
-# Conclusion
-
-LRU cache is a simple and effective way to improve performance in data-intensive applications. By keeping track of recently accessed items and removing the least recently used ones when the cache is full, LRU cache can reduce the number of expensive operations needed to retrieve data and improve application performance.
-
-# LRU Cache
-
-This is a Python-based implementation of LRU Cache, a data structure used to store a limited number of items and improve performance by reducing the number of costly operations needed to retrieve data.
-
 # Requirements
 
 This project requires Python 3.7 or later.
 
 # Usage
 
-To use the LRU Cache, import the LRUCache class from the lru*cache module:
-/\_Now add example*/
+To use the LRU Cache, import the LRUCache class from the lru cache module:
+
+```
+from cache import LRUCache
+
+c1 = LRUCache(50)  # create a cache with a limit of 100 items
+
+cache.put("India", "+91")  # add an item to the cache
+cache.put("UK", "+44")
+
+print(cache.get("India"))  # retrieve an item from the cache
+```
 
 > The LRUCache class has two methods:
-
-> - put(key, value): Adds an item to the cache with the given key and value. If the cache is full, the least recently used item is removed.
+>
+> - set(key, value): Adds an item to the cache with the given key and value. If the cache is full, the least recently used item is removed.
 > - get(key): Retrieves the value of the item with the given key from the cache. If the item is not in the cache, None is returned.
 
 # License
