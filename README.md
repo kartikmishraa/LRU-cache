@@ -1,6 +1,10 @@
 # LRU Cache
 
-This is a Python-based implementation of LRU Cache, a data structure used to store a limited number of items and improve performance by reducing the number of costly operations needed to retrieve data. **It works on the principle that the items that have been used recently are more likely to be used again, while the items that have not been used recently are less likely to be used again.** LRU cache is commonly used in applications where there is a high frequency of reads and a low frequency of writes.
+This is a Python-based implementation of LRU Cache, a data structure used to store a limited number of items and improve performance by reducing the number of costly operations needed to retrieve data.
+
+> It works on the principle that the items that have been used recently are more likely to be used again, while the items that have not been used recently are less likely to be used again.
+
+LRU cache is commonly used in applications where there is a high frequency of reads and a low frequency of writes.
 
 ## How LRU Cache works
 
@@ -25,7 +29,7 @@ c1.set("UK", "+44")
 print(c1.get("India"))  # retrieve an item from the cache
 ```
 
-> The LRUCache class has two methods:
+> The Cache class has two methods:
 >
 > - set(key, value): Adds an item to the cache with the given key and value. If the cache is full, the least recently used item is removed.
 > - get(key): Retrieves the value of the item with the given key from the cache. If the item is not in the cache, None is returned.
