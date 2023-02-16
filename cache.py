@@ -82,7 +82,7 @@ class DoublyLinkedList:
 
         return node
 
-class Cache:
+class LRU:
     def __init__(self, max_size = 20):
         if (max_size <= 0):
             raise Exception("Max size must be >= 0")
